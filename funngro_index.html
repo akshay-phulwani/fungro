@@ -1,91 +1,717 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Funngro — Earn, Learn & Grow | Youth & Brand Opportunities</title>
-<meta name="description" content="Funngro connects young Indians with real brand opportunities and helps companies reach young India through authentic campaigns, content, sampling, research and referrals.">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="Funngro — Earn, Learn & Grow">
-<meta property="og:description" content="Real opportunities for young Indians and measurable youth campaigns for companies.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#07151d">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{--ink:#07151d;--paper:#f4f1e9;--lime:#b6ff4a;--muted:#657078;--line:#d9d8cf;--purple:#7b4dff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{text-decoration:none;color:inherit}.nav{height:76px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(244,241,233,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.logo{font:700 26px 'Space Grotesk';letter-spacing:-1.5px}.logo span{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:7px;background:var(--ink);color:var(--lime);margin-right:2px}nav{display:flex;gap:30px;font-size:14px;font-weight:600}nav a{padding:29px 0;color:#667077}nav a.active{color:var(--ink);border-bottom:2px solid var(--ink)}.nav-cta{background:var(--ink);color:white;padding:11px 18px;border-radius:99px;font-weight:700;font-size:13px}.hero{min-height:700px;padding:80px 8vw;display:grid;grid-template-columns:1.08fr .92fr;gap:5vw;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#737b7f;margin-bottom:18px}.hero h1{font:700 clamp(48px,6.4vw,86px)/.92 'Space Grotesk';letter-spacing:-5px;margin:0 0 28px}.hero h1 em,.section h2 em,.dark-section h2 em,.final-cta h2 em{font-style:normal;color:#7b4dff}.lead{font-size:18px;line-height:1.65;color:#536067;max-width:620px}.actions{display:flex;align-items:center;gap:24px;margin:34px 0}.btn{display:inline-flex;gap:20px;align-items:center;padding:15px 21px;border-radius:10px;font-weight:700}.primary{background:var(--ink);color:white}.primary span{color:var(--lime);font-size:20px}.text-link{font-weight:700;font-size:14px}.proof{display:flex;gap:40px;margin-top:44px}.proof div{display:flex;flex-direction:column}.proof strong{font:700 24px 'Space Grotesk'}.proof span{font-size:11px;color:#70797e;margin-top:4px}.hero-card{height:500px;display:grid;place-items:center;position:relative}.phone{width:285px;height:560px;background:#111e25;border:8px solid #172830;border-radius:42px;padding:20px;color:white;box-shadow:20px 25px 70px #19242b30;transform:rotate(4deg)}.phone-top,.app-head,.wallet{display:flex;justify-content:space-between}.phone-top{font-size:10px;color:#9ca8ad}.app-head{margin-top:28px;font-size:12px}.app-head b{font-size:17px;color:var(--lime)}.balance{background:#22333b;padding:18px;border-radius:15px;margin:18px 0;font-size:10px;color:#9da9ad}.balance strong{display:block;font-size:25px;color:white;margin-top:5px}.task{display:flex;align-items:center;gap:11px;background:#1c2b32;border:1px solid #304149;padding:12px;border-radius:14px;margin:10px 0}.task-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;font-weight:700}.purple{background:#d8ccff;color:#5b31e5}.green{background:#d9ffb7;color:#316800}.orange{background:#ffd8aa;color:#8b4a00}.task div{display:flex;flex-direction:column;flex:1}.task b{font-size:11px}.task small{color:#849198;font-size:9px;margin-top:3px}.arrow{color:#89979d}.wallet{background:var(--lime);color:var(--ink);padding:14px;border-radius:13px;margin-top:16px;font-size:11px}.wallet b{font-size:15px}.float-pill{position:absolute;background:white;padding:11px 15px;border-radius:99px;font-size:10px;font-weight:800;box-shadow:0 12px 30px #0b1d251c}.float-pill.top{top:35px;right:5%}.float-pill.bottom{bottom:30px;left:6%;background:var(--lime)}.company-art{height:500px;position:relative;display:grid;place-items:center}.company-art:before,.company-art:after{content:'';position:absolute;border:1px solid #c7c7bd;border-radius:50%}.company-art:before{width:370px;height:370px}.company-art:after{width:250px;height:250px}.center-mark{width:100px;height:100px;background:var(--ink);color:var(--lime);border-radius:28px;display:grid;place-items:center;font:700 65px 'Space Grotesk';z-index:2;box-shadow:0 20px 50px #07151d28}.orbit-card{position:absolute;z-index:3;background:white;border:1px solid var(--line);border-radius:16px;padding:15px 18px;min-width:145px;box-shadow:0 15px 35px #07151d10}.orbit-card span,.orbit-card small{display:block;color:#7a8388;font-size:9px;letter-spacing:1px}.orbit-card b{display:block;font:700 25px 'Space Grotesk';margin:5px 0}.card-a{top:55px;left:4%}.card-b{right:0;top:190px}.card-c{bottom:45px;left:13%}.marquee{padding:18px 6vw;border-block:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.5px;font-weight:800;color:#6b7479}.marquee i{color:#7b4dff;font-style:normal}.section{padding:110px 8vw}.section-head{max-width:800px}.section h2,.dark-section h2,.final-cta h2{font:700 clamp(38px,5vw,64px)/1 'Space Grotesk';letter-spacing:-3px;margin:0 0 55px}.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}.steps article{padding:30px 25px 20px 0;border-right:1px solid var(--line);margin-right:25px}.steps article:last-child{border:0}.steps span,.solution-grid span{font-size:11px;color:#7b4dff;font-weight:800}.steps h3,.solution-grid h3{font:600 20px 'Space Grotesk';margin:45px 0 12px}.steps p,.solution-grid p,.benefits p{color:#657078;line-height:1.65;font-size:14px}.dark-section{background:var(--ink);color:white;padding:105px 8vw;display:grid;grid-template-columns:1fr 1.5fr;gap:8vw}.dark-section .eyebrow{color:#829097}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.benefits b{color:var(--lime);font-size:11px}.benefits h3{font:600 20px 'Space Grotesk';margin:38px 0 10px}.benefits p{color:#a7b1b5}.final-cta{text-align:center;padding:120px 20px}.final-cta h2{margin-bottom:35px}.solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}.solution-grid article{padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:230px}.solution-grid h3{margin-top:55px}footer{border-top:1px solid var(--line);padding:35px 6vw;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#70797e}footer .logo{color:var(--ink)}footer>a:last-child{font-weight:700;color:var(--ink)}
-@media(max-width:850px){.nav{padding:0 5vw}.nav nav{display:none}.hero{grid-template-columns:1fr;padding:65px 6vw;min-height:auto}.hero h1{letter-spacing:-3px}.hero-card,.company-art{margin-top:20px}.proof{gap:22px}.section,.dark-section{padding:75px 6vw}.steps{grid-template-columns:1fr 1fr}.steps article:nth-child(2){border-right:0}.dark-section{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.solution-grid{grid-template-columns:1fr}.marquee{overflow:hidden;gap:25px;white-space:nowrap}.marquee span:nth-of-type(n+4),.marquee i:nth-of-type(n+4){display:none}footer{gap:15px;flex-wrap:wrap}.phone{transform:none}.hero-card{height:590px}.company-art{height:450px}.card-a{left:0}.card-c{left:5%}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Single-file site additions */
-.view{display:none}
-.view.active{display:block}
-.mode-switch{display:inline-flex;gap:6px;padding:4px;background:#e7e4db;border-radius:99px;margin-left:18px}
-.mode-switch button{border:0;background:transparent;padding:7px 11px;border-radius:99px;font:600 12px 'DM Sans';cursor:pointer;color:#657078}
-.mode-switch button.active{background:white;color:var(--ink);box-shadow:0 2px 8px #07151d14}
-@media(max-width:850px){.mode-switch{display:none}}
-</style>
+  <title>Funngro — Earn, Learn & Grow With Real Projects</title>
+  <meta name="description" content="Funngro connects teenagers with real companies and projects to help them earn, build skills and gain practical experience. Companies can connect with India's young talent through youth-focused campaigns.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Replace this canonical URL with your deployed URL before publishing. -->
+  <link rel="canonical" href="https://YOUR-DEPLOYED-DOMAIN.com/">
+
+  <meta property="og:title" content="Funngro — Earn, Learn & Grow">
+  <meta property="og:description" content="Real projects for young talent. Real reach for companies.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root{
+      --bg:#f7f6f2;
+      --card:#ffffff;
+      --ink:#111111;
+      --muted:#686868;
+      --line:#deddd7;
+      --accent:#d9ff45;
+      --accent-dark:#a9c900;
+      --dark:#111111;
+      --radius:24px;
+      --shadow:0 18px 50px rgba(17,17,17,.08);
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.55;
+    }
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(calc(100% - 40px),var(--max));margin:auto}
+
+    /* NAV */
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(247,246,242,.88);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(17,17,17,.08);
+    }
+    nav{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .logo{
+      font-size:27px;
+      font-weight:950;
+      letter-spacing:-1.7px;
+    }
+    .logo span{color:#789000}
+    .navlinks{display:flex;gap:28px;align-items:center}
+    .navlinks a{
+      font-size:14px;
+      font-weight:750;
+      color:#444;
+    }
+    .navlinks a:hover{color:#111}
+    .nav-actions{display:flex;gap:10px}
+    .btn{
+      border:1px solid var(--ink);
+      padding:11px 18px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:850;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      transition:.2s ease;
+      background:transparent;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-dark{background:var(--dark);color:white}
+    .btn-lime{background:var(--accent);border-color:var(--accent)}
+    .btn-lime:hover{background:#e4ff75}
+    .menu{display:none;border:0;background:none;font-size:25px;cursor:pointer}
+
+    /* HERO */
+    .hero{
+      padding:76px 0 70px;
+      overflow:hidden;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#fff;
+      border:1px solid var(--line);
+      padding:7px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:850;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      margin-bottom:24px;
+    }
+    .dot{width:8px;height:8px;background:#91b000;border-radius:50%}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:60px;
+      align-items:center;
+    }
+    h1{
+      font-size:clamp(48px,7vw,86px);
+      line-height:.93;
+      letter-spacing:-5px;
+      max-width:780px;
+      margin-bottom:28px;
+    }
+    h1 em{font-style:normal;color:#829b00}
+    .hero-copy{
+      max-width:620px;
+      color:var(--muted);
+      font-size:18px;
+      margin-bottom:30px;
+    }
+    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .proof{
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:42px;
+      padding-top:28px;
+      border-top:1px solid var(--line);
+    }
+    .proof strong{display:block;font-size:27px;letter-spacing:-1px}
+    .proof span{font-size:12px;color:var(--muted);font-weight:700}
+
+    /* PHONE CARD */
+    .visual{
+      position:relative;
+      min-height:520px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .blob{
+      width:390px;
+      height:390px;
+      border-radius:42% 58% 63% 37% / 47% 43% 57% 53%;
+      background:var(--accent);
+      transform:rotate(-12deg);
+      position:absolute;
+    }
+    .phone{
+      position:relative;
+      z-index:2;
+      width:265px;
+      background:#111;
+      padding:10px;
+      border-radius:38px;
+      box-shadow:0 30px 70px rgba(0,0,0,.22);
+    }
+    .phone-screen{
+      background:#f8f8f5;
+      border-radius:30px;
+      padding:22px;
+      min-height:500px;
+    }
+    .phone-top{display:flex;justify-content:space-between;font-size:11px;font-weight:800;margin-bottom:30px}
+    .balance{
+      background:#111;color:#fff;border-radius:20px;padding:20px;margin-bottom:14px
+    }
+    .balance small{opacity:.65}
+    .balance strong{display:block;font-size:32px;margin-top:5px}
+    .mini-task{
+      background:white;border:1px solid #e2e2df;border-radius:16px;padding:15px;margin-top:10px
+    }
+    .mini-task small{color:#777}
+    .mini-task strong{display:block;margin:4px 0}
+    .tag{
+      display:inline-block;background:var(--accent);border-radius:999px;padding:4px 8px;
+      font-size:9px;font-weight:900;margin-top:5px
+    }
+
+    /* SECTIONS */
+    section{padding:90px 0}
+    .section-head{
+      display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px
+    }
+    .section-head h2{
+      font-size:clamp(35px,5vw,58px);
+      line-height:1;
+      letter-spacing:-3px;
+      max-width:650px;
+    }
+    .section-head p{max-width:430px;color:var(--muted)}
+    .label{
+      color:#829b00;
+      text-transform:uppercase;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.12em;
+      margin-bottom:12px;
+    }
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 5px 20px rgba(0,0,0,.025);
+    }
+    .card-number{
+      width:38px;height:38px;border-radius:50%;background:var(--accent);
+      display:flex;align-items:center;justify-content:center;font-weight:950;margin-bottom:55px
+    }
+    .card h3{font-size:23px;letter-spacing:-.7px;margin-bottom:9px}
+    .card p{color:var(--muted);font-size:15px}
+
+    .dark-section{background:#111;color:#fff}
+    .dark-section .section-head p{color:#a9a9a9}
+    .dark-section .label{color:var(--accent)}
+    .dark-card{background:#1b1b1b;border-color:#303030}
+    .dark-card p{color:#aaa}
+
+    /* SWITCH */
+    .switcher{
+      display:flex;
+      gap:8px;
+      padding:6px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      width:max-content;
+      margin:0 auto 60px;
+    }
+    .switcher button{
+      border:0;background:transparent;border-radius:999px;padding:12px 20px;
+      font-weight:850;cursor:pointer
+    }
+    .switcher button.active{background:#111;color:#fff}
+    .view{display:none}
+    .view.active{display:block}
+
+    /* COMPANY */
+    .company-hero{padding-top:40px}
+    .company-banner{
+      background:#111;
+      color:#fff;
+      border-radius:32px;
+      padding:65px;
+      position:relative;
+      overflow:hidden;
+    }
+    .company-banner:after{
+      content:"";
+      position:absolute;
+      width:330px;height:330px;
+      border-radius:50%;
+      background:var(--accent);
+      right:-80px;top:-90px;
+      opacity:.9;
+    }
+    .company-banner > *{position:relative;z-index:2}
+    .company-banner h2{
+      font-size:clamp(42px,6vw,76px);
+      letter-spacing:-4px;
+      line-height:.96;
+      max-width:790px;
+      margin-bottom:20px
+    }
+    .company-banner p{max-width:620px;color:#bbb;font-size:17px}
+    .campaign{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns:1.3fr .7fr;
+      gap:16px
+    }
+    .campaign-main{
+      min-height:330px;
+      border-radius:26px;
+      padding:30px;
+      background:var(--accent);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .campaign-main h3{font-size:38px;letter-spacing:-2px;max-width:470px}
+    .campaign-side{display:grid;gap:16px}
+    .metric{
+      border-radius:26px;
+      padding:26px;
+      background:#fff;
+      border:1px solid var(--line);
+    }
+    .metric strong{font-size:42px;letter-spacing:-2px;display:block}
+    .metric span{color:var(--muted);font-size:13px;font-weight:700}
+
+    /* CTA */
+    .cta{
+      padding:100px 0;
+      text-align:center;
+    }
+    .cta-box{
+      background:var(--accent);
+      border-radius:32px;
+      padding:70px 30px;
+    }
+    .cta h2{
+      font-size:clamp(40px,6vw,72px);
+      letter-spacing:-4px;
+      line-height:.96;
+      margin-bottom:20px
+    }
+    .cta p{max-width:580px;margin:0 auto 28px;color:#4f5a1e}
+
+    footer{
+      background:#111;color:#aaa;padding:35px 0;
+    }
+    footer .footer-inner{
+      display:flex;justify-content:space-between;gap:20px;align-items:center
+    }
+    footer strong{color:white}
+    footer a:hover{color:white}
+
+    /* ACCESSIBILITY */
+    :focus-visible{outline:3px solid #789000;outline-offset:3px}
+
+    /* RESPONSIVE */
+    @media(max-width:850px){
+      .navlinks,.nav-actions{display:none}
+      .menu{display:block}
+      .nav-open .navlinks{
+        display:flex;position:absolute;left:20px;right:20px;top:70px;
+        background:#fff;border:1px solid var(--line);border-radius:20px;
+        padding:20px;flex-direction:column;align-items:flex-start;box-shadow:var(--shadow)
+      }
+      .hero-grid{grid-template-columns:1fr;gap:20px}
+      .visual{min-height:460px}
+      .grid-3{grid-template-columns:1fr}
+      .section-head{display:block}
+      .section-head p{margin-top:16px}
+      .campaign{grid-template-columns:1fr}
+      .company-banner{padding:40px 28px}
+    }
+    @media(max-width:560px){
+      .container{width:min(calc(100% - 28px),var(--max))}
+      .hero{padding-top:48px}
+      h1{letter-spacing:-3px}
+      .proof{gap:20px}
+      .blob{width:300px;height:300px}
+      .phone{width:235px}
+      .phone-screen{min-height:450px}
+      section{padding:65px 0}
+      .switcher{width:100%;justify-content:center}
+      .switcher button{flex:1;padding:11px 8px}
+      footer .footer-inner{flex-direction:column;align-items:flex-start}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important}
+    }
+  </style>
+
+  <!-- Generic WebSite schema. Replace URL before deployment. -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Funngro",
+    "url":"https://YOUR-DEPLOYED-DOMAIN.com/",
+    "description":"A platform connecting young people with real projects and companies with young talent."
+  }
+  </script>
 </head>
+
 <body>
-<header class="nav">
-  <a class="logo" href="#teen" data-view="teen"><span>f</span>unngro</a>
-  <nav>
-    <a href="#teen" data-view="teen" class="active">For Teens</a>
-    <a href="#company" data-view="company">For Companies</a>
-    <a href="#how" data-view="teen">How it works</a>
-    <a href="#solutions" data-view="company">Solutions</a>
+
+<header id="top">
+  <nav class="container" aria-label="Main navigation">
+    <a class="logo" href="#top" aria-label="Funngro home">funngro<span>.</span></a>
+
+    <div class="navlinks" id="navLinks">
+      <a href="#teen">For Teens</a>
+      <a href="#company">For Companies</a>
+      <a href="#how">How it works</a>
+      <a href="#opportunities">Opportunities</a>
+    </div>
+
+    <div class="nav-actions">
+      <a class="btn" href="#company">I'm a Company</a>
+      <a class="btn btn-dark" href="#teen">Start Earning</a>
+    </div>
+
+    <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
   </nav>
-  <div class="mode-switch" aria-label="Choose website audience">
-    <button data-view="teen" class="active">Teen</button>
-    <button data-view="company">Company</button>
-  </div>
-  <a class="nav-cta" id="navCta" href="https://www.funngro.com/" target="_blank" rel="noopener">Get the app ↗</a>
 </header>
 
-<section id="teen" class="view active">
 <main>
-<section class="hero teen-hero"><div class="hero-copy"><div class="eyebrow">INDIA'S YOUTH · REAL BRANDS</div><h1>Your first earning<br><em>starts here.</em></h1><p class="lead">Turn your spare time into real experience. Discover flexible brand campaigns, complete work you actually enjoy, and get paid through UPI.</p><div class="actions"><a class="btn primary" href="https://www.funngro.com/" target="_blank">Start earning <span>→</span></a><a class="text-link" href="#how">See how it works ↓</a></div><div class="proof"><div><strong>70L+</strong><span>young Indians</span></div><div><strong>5,000+</strong><span>real brands</span></div><div><strong>1,000+</strong><span>live projects</span></div></div></div>
-<div class="hero-card"><div class="phone"><div class="phone-top"><span>9:41</span><span>● ● ●</span></div><div class="app-head"><span>Good morning 👋</span><b>₹2,840</b></div><div class="balance">Available to withdraw <strong>₹1,460</strong></div><div class="task"><span class="task-icon purple">▶</span><div><b>Short video brief</b><small>₹750 · 2 days</small></div><span class="arrow">→</span></div><div class="task"><span class="task-icon green">↗</span><div><b>Refer & earn</b><small>₹300 · 1 day</small></div><span class="arrow">→</span></div><div class="task"><span class="task-icon orange">✦</span><div><b>Brand survey</b><small>₹150 · 15 min</small></div><span class="arrow">→</span></div><div class="wallet"><span>GroMoney</span><b>₹3,190</b></div></div><div class="float-pill top">✦ First payout</div><div class="float-pill bottom">UPI • INSTANT</div></div></section>
-<section class="marquee"><span>BRAND PROMOTION</span><i>✦</i><span>CONTENT</span><i>✦</i><span>REFERRALS</span><i>✦</i><span>SAMPLING</span><i>✦</i><span>SURVEYS</span><i>✦</i><span>INFLUENCER BRIEFS</span></section>
-<section class="section" id="how"><div class="section-head"><div class="eyebrow">FROM ZERO TO FIRST PAYOUT</div><h2>Simple enough to start.<br><em>Real enough to matter.</em></h2></div><div class="steps"><article><span>01</span><h3>Download & sign up</h3><p>Create your profile in minutes. Tell us what you like and what you can do.</p></article><article><span>02</span><h3>Pick your project</h3><p>Choose brand campaigns, content, referrals, surveys or other flexible tasks.</p></article><article><span>03</span><h3>Do the work</h3><p>Follow the brief, submit your proof and build a portfolio of real experience.</p></article><article><span>04</span><h3>Get paid</h3><p>Once your work is verified, your earnings move to your UPI or bank account.</p></article></div></section>
-<section class="dark-section"><div><div class="eyebrow">MORE THAN A SIDE HUSTLE</div><h2>Earn today.<br><em>Build tomorrow.</em></h2></div><div class="benefits"><div><b>01</b><h3>Real work</h3><p>Work with recognizable brands and turn tasks into proof of what you can do.</p></div><div><b>02</b><h3>Real skills</h3><p>Practice communication, content, marketing, research, design and more.</p></div><div><b>03</b><h3>Real confidence</h3><p>Every completed project makes the next opportunity easier to chase.</p></div></div></section>
-<section class="final-cta"><div class="eyebrow">YOUR TURN</div><h2>Make your first rupee<br><em>count.</em></h2><a class="btn primary" href="https://www.funngro.com/" target="_blank">Join Funngro →</a></section>
-</main>
-</section>
 
-<section id="company" class="view">
-<main><section class="hero company-hero"><div class="hero-copy"><div class="eyebrow">FOR MARKETING LEADERS · INDIA</div><h1>Reach young India.<br><em>Move them to act.</em></h1><p class="lead">Go beyond impressions. Put your product in the hands, feeds and conversations of a verified community of young Indians ready to try, create, share and respond.</p><div class="actions"><a class="btn primary" href="https://www.funngro.com/for-brands" target="_blank">Build a campaign <span>→</span></a><a class="text-link" href="#solutions">Explore solutions ↓</a></div><div class="proof"><div><strong>70L+</strong><span>young Indians</span></div><div><strong>5,000+</strong><span>brands</span></div><div><strong>12+</strong><span>work categories</span></div></div></div><div class="company-art"><div class="orbit-card card-a"><span>CONTENT</span><b>1,240</b><small>submissions</small></div><div class="orbit-card card-b"><span>SAMPLING</span><b>8,420</b><small>responses</small></div><div class="center-mark">f</div><div class="orbit-card card-c"><span>REFERRALS</span><b>₹6.2L</b><small>tracked value</small></div></div></section>
-<section class="section" id="solutions"><div class="section-head"><div class="eyebrow">WHAT CAN WE HELP YOU DO?</div><h2>From awareness to action,<br><em>built for young India.</em></h2></div><div class="solution-grid"><article><span>01</span><h3>Brand promotion</h3><p>Get your product or message into the daily lives of young consumers through authentic peer-led activity.</p></article><article><span>02</span><h3>Content & creators</h3><p>Brief a distributed creator community to produce short-form content that feels native to the platform.</p></article><article><span>03</span><h3>Sampling & trials</h3><p>Put products in front of relevant users and turn curiosity into first-hand experience.</p></article><article><span>04</span><h3>Surveys & research</h3><p>Collect structured feedback and opinions from a young audience to improve your next decision.</p></article><article><span>05</span><h3>Referrals & sales</h3><p>Activate performance-oriented campaigns where actions and outcomes can be measured.</p></article><article><span>06</span><h3>App testing</h3><p>Get real-user feedback on onboarding, features and product experience before you scale.</p></article></div></section>
-<section class="dark-section"><div><div class="eyebrow">WHY FUNNGRO</div><h2>Reach is easy.<br><em>Action is harder.</em></h2></div><div class="benefits"><div><b>01</b><h3>Verified community</h3><p>A large, active youth audience with structured campaign participation.</p></div><div><b>02</b><h3>Flexible activation</h3><p>Choose the work type and brief that matches your business objective.</p></div><div><b>03</b><h3>Measurable output</h3><p>Track submissions, participation and campaign outcomes instead of vanity reach alone.</p></div></div></section>
-<section class="final-cta"><div class="eyebrow">READY TO START?</div><h2>Give young India<br><em>something to do.</em></h2><a class="btn primary" href="https://www.funngro.com/for-brands" target="_blank">Talk to Funngro →</a></section></main>
-</section>
+  <!-- TEEN VIEW -->
+  <div id="teen" class="view active">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Built for the next generation</div>
+
+          <h1>Earn your first <em>real money.</em></h1>
+
+          <p class="hero-copy">
+            Work on real projects for real companies, build skills that matter,
+            and get paid for what you create. Funngro helps young people turn
+            free time into experience.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-dark" href="#opportunities">Explore projects →</a>
+            <a class="btn" href="#how">See how it works</a>
+          </div>
+
+          <div class="proof" aria-label="Funngro platform statistics">
+            <div><strong>70L+</strong><span>young Indians</span></div>
+            <div><strong>5,000+</strong><span>brands</span></div>
+            <div><strong>1,000+</strong><span>projects</span></div>
+          </div>
+        </div>
+
+        <div class="visual" aria-label="Funngro earnings app preview">
+          <div class="blob"></div>
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-top"><span>FUNNGRO</span><span>● ● ●</span></div>
+
+              <div class="balance">
+                <small>Your earnings</small>
+                <strong>₹4,850</strong>
+              </div>
+
+              <div class="mini-task">
+                <small>New project</small>
+                <strong>Make 3 social posts</strong>
+                <span class="tag">₹750</span>
+              </div>
+
+              <div class="mini-task">
+                <small>Brand research</small>
+                <strong>Complete survey</strong>
+                <span class="tag">₹500</span>
+              </div>
+
+              <div class="mini-task">
+                <small>Content</small>
+                <strong>Product review</strong>
+                <span class="tag">₹1,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="label">How it works</div>
+            <h2>From curious to capable.</h2>
+          </div>
+          <p>
+            Start small. Work on real briefs. Learn by doing and build proof
+            that goes beyond a classroom certificate.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Create your profile</h3>
+            <p>Tell companies what you know, what you like and what skills you want to build.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Pick a project</h3>
+            <p>Discover short, practical projects from brands looking for young talent.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Do the work. Get paid.</h3>
+            <p>Deliver your work, gain experience and receive your project earnings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="opportunities" class="dark-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="label">Opportunities</div>
+            <h2>There’s more than one way to start.</h2>
+          </div>
+          <p>Choose projects around your interests and build skills companies actually use.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card dark-card">
+            <div class="card-number">01</div>
+            <h3>Content & creators</h3>
+            <p>Make social content, write, edit or create short-form videos for real brands.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">02</div>
+            <h3>Brand promotion</h3>
+            <p>Help companies reach young audiences through authentic campus and community promotion.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">03</div>
+            <h3>Research & testing</h3>
+            <p>Share opinions, test products and help brands understand the next generation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="label">Your next step</div>
+          <h2>Don’t wait for experience.<br>Go build it.</h2>
+          <p>Start with one project. Learn something useful. Earn while you do it.</p>
+          <a class="btn btn-dark" href="#top">Start with Funngro →</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- COMPANY VIEW -->
+  <div id="company" class="view">
+
+    <section class="company-hero">
+      <div class="container">
+        <div class="company-banner">
+          <div class="label">For companies</div>
+          <h2>Reach young India. Move them to act.</h2>
+          <p>
+            Connect your brand with a large network of young people through
+            promotion, content, sampling, research, referrals and app testing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="campaign">
+          <div class="campaign-main">
+            <span class="label">Campaign engine</span>
+            <h3>Turn youth attention into measurable action.</h3>
+            <a class="btn btn-dark" href="#company-cta">Build a campaign →</a>
+          </div>
+
+          <div class="campaign-side">
+            <div class="metric">
+              <strong>70L+</strong>
+              <span>young Indians in the network</span>
+            </div>
+            <div class="metric">
+              <strong>5K+</strong>
+              <span>brands already connected</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company-services" class="dark-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="label">What companies can do</div>
+            <h2>One network. Multiple campaign goals.</h2>
+          </div>
+          <p>Build youth campaigns around the action you actually need.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card dark-card">
+            <div class="card-number">01</div>
+            <h3>Brand promotion</h3>
+            <p>Put your brand in front of young audiences through targeted youth campaigns.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">02</div>
+            <h3>Content & creators</h3>
+            <p>Get authentic content and creator-led communication designed for younger audiences.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">03</div>
+            <h3>Sampling</h3>
+            <p>Get products into the hands of young consumers and capture direct feedback.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">04</div>
+            <h3>Surveys & research</h3>
+            <p>Collect youth opinions and insights to make better product and marketing decisions.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">05</div>
+            <h3>Referrals & sales</h3>
+            <p>Activate a young network around acquisition, referrals and measurable outcomes.</p>
+          </article>
+
+          <article class="card dark-card">
+            <div class="card-number">06</div>
+            <h3>App testing</h3>
+            <p>Put digital products in front of young users and gather practical usability feedback.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="company-cta" class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="label">For your next campaign</div>
+          <h2>Make young India part of your growth.</h2>
+          <p>Tell us what you want to achieve and build a campaign around it.</p>
+          <a class="btn btn-dark" href="mailto:hello@funngro.com">Talk to Funngro →</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>funngro.</strong> — Earn. Learn. Grow.</div>
+    <div>
+      <a href="#teen">Teen</a>
+      &nbsp;·&nbsp;
+      <a href="#company">Company</a>
+      &nbsp;·&nbsp;
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-(function(){
-  const views = document.querySelectorAll('.view');
-  const links = document.querySelectorAll('[data-view]');
-  const navCta = document.getElementById('navCta');
-  function show(view){
-    views.forEach(v => v.classList.toggle('active', v.id === view));
-    links.forEach(l => l.classList.toggle('active', l.dataset.view === view));
-    navCta.href = view === 'company' ? 'https://www.funngro.com/for-brands' : 'https://www.funngro.com/';
-    navCta.textContent = view === 'company' ? 'Talk to us ↗' : 'Get the app ↗';
-    history.replaceState(null, '', '#' + view);
-    window.scrollTo({top:0, behavior:'smooth'});
+  const nav = document.querySelector("header");
+  const menuBtn = document.getElementById("menuBtn");
+
+  menuBtn.addEventListener("click", () => {
+    const open = nav.classList.toggle("nav-open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.textContent = open ? "×" : "☰";
+  });
+
+  document.querySelectorAll(".navlinks a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("nav-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰";
+    });
+  });
+
+  function showView(id) {
+    document.querySelectorAll(".view").forEach(view => view.classList.remove("active"));
+    const target = document.getElementById(id);
+    if (target) target.classList.add("active");
   }
-  links.forEach(link => link.addEventListener('click', e => {
-    const target = link.dataset.view;
-    if (target) { e.preventDefault(); show(target); }
-  }));
-  document.querySelectorAll('.view a[href="#how"]').forEach(a => a.addEventListener('click', e => {
-    e.preventDefault(); show('teen'); setTimeout(() => document.getElementById('how')?.scrollIntoView({behavior:'smooth'}), 50);
-  }));
-  document.querySelectorAll('.view a[href="#solutions"]').forEach(a => a.addEventListener('click', e => {
-    e.preventDefault(); show('company'); setTimeout(() => document.getElementById('solutions')?.scrollIntoView({behavior:'smooth'}), 50);
-  }));
-  if (location.hash === '#company') show('company');
-})();
+
+  function route() {
+    const hash = window.location.hash.replace("#", "");
+    if (hash === "company" || hash === "company-services" || hash === "company-cta") {
+      showView("company");
+    } else {
+      showView("teen");
+    }
+  }
+
+  window.addEventListener("hashchange", route);
+  route();
+
+  // Internal navigation that switches between the two experiences.
+  document.querySelectorAll('a[href="#company"]').forEach(a => {
+    a.addEventListener("click", () => showView("company"));
+  });
+
+  document.querySelectorAll('a[href="#teen"]').forEach(a => {
+    a.addEventListener("click", () => showView("teen"));
+  });
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Funngro","url":"https://www.funngro.com/","description":"A platform connecting young Indians with real opportunities and brands with youth campaigns."}
-</script>
+
 </body>
 </html>
